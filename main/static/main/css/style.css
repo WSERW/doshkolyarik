@@ -1,0 +1,90 @@
+:root{
+    --main-text:#242021;
+    --main-color: #dd2563;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color:var(--main-text);
+    font-family: 'Comic Helvetic';
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+/* navbar */
+
+nav {
+
+}
+
+.navbar {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_item {
+    position: relative;
+}
+
+.nav_item::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translate(-50%);
+    width: calc(100% - 10px);
+    height: 3px;
+    background-color: var(--main-color);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.nav_item:hover::before {
+    opacity: 1;
+}
+.nav_link {
+    color: var(--main-text);
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px 20px;
+}
+
+.schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

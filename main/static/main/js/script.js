@@ -1,2 +1,2 @@
-var scene = document.getElementById('paralax_scene');
+var scene = document.getElementById('promoScene');
 var parallaxInstance = new Parallax(scene);

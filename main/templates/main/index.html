@@ -10,16 +10,15 @@
     <link rel="stylesheet" href="{% static 'main/fonts/ComicHelvetic/comichelvetic.css' %}">
     <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
 </head>
-
 <body>
     <nav>
         <div class="container">
             <div class="navbar">
-                <a href="#" class="logo"><img src="#" alt="Дошколярик"></a>
+                <a href="#" class="logo"><img src= {% static 'main/img/logo.png' %} alt="Дошколярик"></a>
                 <ul class="nav_list">
-                    <li class="nav_item"><a href="#" class="nav_link">lorem</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">lorem</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">lorem</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Главная</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Направления</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Контакты</a></li>
                 </ul>
                 <div class="schedule">
                     <p>Пн-Пт: <br><span>8:00 - 21:00</span></p>
@@ -38,42 +37,131 @@
             <div class="promo_block">
                 <div class="promo_text">
                     <h1 class="promo_title">Дошколярик - центр развития и рисования для детей</h1>
-                    <p class="promo_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea asperiores eius
-                        placeat deserunt non architecto.</p>
+                    <p class="promo_description">У нас вы найдете обучение английскому, русскому и украинскому языку, рисование, лепку, скетчинг, раннее развитие (счет, письмо, чтение), математику, а также компьютерные курсы для детей.</p>
                     <ul class="promo_list">
-                        <li class="promo_item">lorem</li>
-                        <li class="promo_item">lorem</li>
-                        <li class="promo_item">lorem</li>
+                        <li class="promo_item">Малые группы</li>
+                        <li class="promo_item">11 городов</li>
+                        <li class="promo_item">Опытные учителя</li>
                     </ul>
                     <button class="call promo_btn">Записаться</button>
                 </div>
                 <div class="promo_img">
                     <div id="promoScene">
-                        <div data-depth='0.2'></div>
-                        <div data-depth='0.2'></div>
-                        <div data-depth='0.2'></div>
-                        <div data-depth='0.2'></div>
+                        <div data-depth='0.4'>
+                            <img src={% static '/main/img/blob1.png' %} alt="">
+                        </div>
+                        <div data-depth='0.6'>
+                            <img src={% static '/main/img/blob2.png' %} alt=""
+                            style='transform: translate(15px,15px);'>
+                        </div>
+                        <div data-depth='1'>
+                            <img src={% static '/main/img/blob3.png' %} alt=""
+                            style='transform: translate(100px,50px);'>
+                        </div>
+                        <div data-depth='0.4'>
+                            <img src={% static '/main/img/camera.png' %} alt=""
+                            style='transform: translate(120px,70px);'>
+                        </div>
+                        <div data-depth='0.6'>
+                            <img src={% static '/main/img/knight.png' %} alt=""
+                            style='transform: translate(100px,0px);'>
+                        </div>
+                        <div data-depth='0.8'>
+                            <img src={% static '/main/img/queen.png' %} alt=""
+                            style='transform: translate(100px,265px);'>
+                        </div>
+                        <div data-depth='0.4'>
+                            <img src={% static '/main/img/book.png' %} alt=""
+                            style='transform: translate(200px,300px);'>
+                        </div>
 
+                       <div data-depth='1.5'>
+                            <img src={% static '/main/img/malchik.svg' %} 
+                            style='height: 300px; transform: translate(210px,0);' alt="">
+                        </div>
+                        <div data-depth='2'>
+                            <img src={% static '/main/img/devochka.svg' %} 
+                            style='height: 300px; transform: translate(-160px,60px);' alt="">
+                        </div>
                     </div>
-                    <ul class="promo_list">
-                        <li class="promo_item">
-                            <a href="#" class="promo_link"><img src="" alt="" class="promo_icon"></a>
+                    <ul class="promo_socio">
+                        <li class="promo_socio_item">
+                            <a href="#" class="promo_socio_link"><img src="" alt="" class="promo_icon"></a>
                         </li>
-                        <li class="promo_item">
-                            <a href="#" class="promo_link"><img src="" alt="" class="promo_icon"></a>
+                        <li class="promo_socio_item">
+                            <a href="#" class="promo_socio_link"><img src="" alt="" class="promo_icon"></a>
                         </li>
-                        <li class="promo_item">
-                            <a href="#" class="promo_link"><img src="" alt="" class="promo_icon"></a>
+                        <li class="promo_socio_item">
+                            <a href="#" class="promo_socio_link"><img src="" alt="" class="promo_icon"></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <img src={% static '/main/img/shape.png' %} class='promo_shape' alt="/-\-/-\/">
     </header>
-    <section class="ways">
+    <section class="way">
         <div class="container">
+            <div class="way_title">
+                <h2>Наши направления:</h2>
+                <img src="#" alt="">
+            </div>
+            <div class="way_cards">
+                <div class="way_card">
+                    <h3 class="way_card_title">
+                        <span class="way_card_age">2 - 18 лет</span>
+                        <span class='way_card_tag'>Рисование</span>
+                    </h3>
+                    <ul class="way_card_list">
+                        <li class="way_card_item">Акварель и карандаши</li>
+                        <li class="way_card_item">Гуашь, пастель, акрил</li>
+                        <li class="way_card_item">Лепка, масло, дерево</li>
+                        <li class="way_card_item">Скетчинг</li>
+                    </ul>
+                </div>
 
+                <div class="way_card">
+                    <h3 class="way_card_title">
+                        <span class="way_card_age">2 - 18 лет</span>
+                        <span class='way_card_tag'>Рисование</span>
+                    </h3>
+                    <ul class="way_card_list">
+                        <li class="way_card_item">Акварель и карандаши</li>
+                        <li class="way_card_item">Гуашь, пастель, акрил</li>
+                        <li class="way_card_item">Лепка, масло, дерево</li>
+                        <li class="way_card_item">Скетчинг</li>
+                    </ul>
+                </div>
+
+                <div class="way_card">
+                    <h3 class="way_card_title">
+                        <span class="way_card_age">2 - 18 лет</span>
+                        <span class='way_card_tag'>Рисование</span>
+                    </h3>
+                    <ul class="way_card_list">
+                        <li class="way_card_item">Акварель и карандаши</li>
+                        <li class="way_card_item">Гуашь, пастель, акрил</li>
+                        <li class="way_card_item">Лепка, масло, дерево</li>
+                        <li class="way_card_item">Скетчинг</li>
+                    </ul>
+                </div>
+
+                <div class="way_card">
+                    <h3 class="way_card_title">
+                        <span class="way_card_age">2 - 18 лет</span>
+                        <span class='way_card_tag'>Рисование</span>
+                    </h3>
+                    <ul class="way_card_list">
+                        <li class="way_card_item">Акварель и карандаши</li>
+                        <li class="way_card_item">Гуашь, пастель, акрил</li>
+                        <li class="way_card_item">Лепка, масло, дерево</li>
+                        <li class="way_card_item">Скетчинг</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <img src={% static 'main/img/bush.png' %} alt="" class="way_bush">
+        <img src={% static 'main/img/tree.png' %} alt="" class="way_tree">
     </section>
     <section class="description">
         <div class="container"></div>
